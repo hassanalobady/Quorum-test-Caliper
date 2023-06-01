@@ -1,0 +1,249 @@
+version: '3.6'
+services:
+  node_raft_1:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_1:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.2'
+    ports:
+      - 23001:8545
+      - 24001:30303
+      - 25001:50400
+      - 26001:8546
+      - 27001:9081
+    user: '1000:1000'
+  node_raft_2:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_2:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.3'
+    ports:
+      - 23002:8545
+      - 24002:30303
+      - 25002:50400
+      - 26002:8546
+      - 27002:9081
+    user: '1000:1000'
+  node_raft_3:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_3:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.4'
+    ports:
+      - 23003:8545
+      - 24003:30303
+      - 25003:50400
+      - 26003:8546
+      - 27003:9081
+    user: '1000:1000'
+  node_raft_4:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_4:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.5'
+    ports:
+      - 23004:8545
+      - 24004:30303
+      - 25004:50400
+      - 26004:8546
+      - 27004:9081
+    user: '1000:1000'
+  node_raft_5:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_5:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.6'
+    ports:
+      - 23005:8545
+      - 24005:30303
+      - 25005:50400
+      - 26005:8546
+      - 27005:9081
+    user: '1000:1000'
+  node_raft_6:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_6:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.7'
+    ports:
+      - 23006:8545
+      - 24006:30303
+      - 25006:50400
+      - 26006:8546
+      - 27006:9081
+    user: '1000:1000'
+  node_raft_7:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_7:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.8'
+    ports:
+      - 23007:8545
+      - 24007:30303
+      - 25007:50400
+      - 26007:8546
+      - 27007:9081
+    user: '1000:1000'
+  node_raft_8:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_8:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.9'
+    ports:
+      - 23008:8545
+      - 24008:30303
+      - 25008:50400
+      - 26008:8546
+      - 27008:9081
+    user: '1000:1000'
+  node_raft_9:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_9:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.10'
+    ports:
+      - 23009:8545
+      - 24009:30303
+      - 25009:50400
+      - 26009:8546
+      - 27009:9081
+    user: '1000:1000'
+  node_raft_10:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_10:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.11'
+    ports:
+      - 23010:8545
+      - 24010:30303
+      - 25010:50400
+      - 26010:8546
+      - 27010:9081
+    user: '1000:1000'
+  node_raft_11:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_11:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.12'
+    ports:
+      - 23011:8545
+      - 24011:30303
+      - 25011:50400
+      - 26011:8546
+      - 27011:9081
+    user: '1000:1000'
+  node_raft_12:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_12:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.13'
+    ports:
+      - 23012:8545
+      - 24012:30303
+      - 25012:50400
+      - 26012:8546
+      - 27012:9081
+    user: '1000:1000'
+  node_raft_13:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_13:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.14'
+    ports:
+      - 23013:8545
+      - 24013:30303
+      - 25013:50400
+      - 26013:8546
+      - 27013:9081
+    user: '1000:1000'
+  node_raft_14:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_14:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.15'
+    ports:
+      - 23014:8545
+      - 24014:30303
+      - 25014:50400
+      - 26014:8546
+      - 27014:9081
+    user: '1000:1000'
+  node_raft_15:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_15:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.16'
+    ports:
+      - 23015:8545
+      - 24015:30303
+      - 25015:50400
+      - 26015:8546
+      - 27015:9081
+    user: '1000:1000'
+  node_raft_16:
+    image: marcomazzoni/quorum:2.5.0
+    volumes:
+      - './qdata_16:/qdata'
+      - '/etc/localtime:/etc/localtime'
+    networks:
+      quorum_net:
+        ipv4_address: '172.13.0.17'
+    ports:
+      - 23016:8545
+      - 24016:30303
+      - 25016:50400
+      - 26016:8546
+      - 27016:9081
+    user: '1000:1000'
+networks:
+  quorum_net:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+      - subnet: 172.13.0.0/16
